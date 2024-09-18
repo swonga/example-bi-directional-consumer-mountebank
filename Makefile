@@ -4,10 +4,10 @@
 
 # Default to the read only token - the read/write token will be present on Travis CI.
 # It's set as a secure environment variable in the .travis.yml file
-GITHUB_ORG="pactflow"
+GITHUB_ORG="swonga"
 PACTICIPANT := "pactflow-example-bi-directional-consumer-mountebank"
 GITHUB_WEBHOOK_UUID := "b324780f-f0aa-4836-8780-ebbcdf08b4b1"
-PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli"
+PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL='https://smartbear-sw.pactflow.io' -e PACT_BROKER_TOKEN='jrHciZiL05uCSLzYKCzjcQ' pactfoundation/pact-cli"
 
 # Only deploy from master
 ifeq ($(GIT_BRANCH),master)
