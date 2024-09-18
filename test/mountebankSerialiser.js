@@ -36,11 +36,11 @@ export const mbMatchesToPact = (imposters) => {
         path: match.request.path,
         body: match.request.body ? JSON.parse(match.request.body) : undefined,
         query: match.request.query ? new URLSearchParams(match.request.query).toString() : undefined,
-        headers: match.request.headers,
+//        headers: match.request.headers,
       },
       response: {
         status: match.response.statusCode,
-        headers: match.response.headers,
+//        headers: match.response.headers,
         body: match.response.body ? JSON.parse(match.response.body) : undefined,
       },
       timestamp: match.timestamp, // use this to detect duplicates
