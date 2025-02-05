@@ -19,7 +19,7 @@ endif
 all: test
 
 ## ====================
-## CI tasks
+## CI task
 ## ====================
 
 ci: test publish_pacts can_i_deploy $(DEPLOY_TARGET)
