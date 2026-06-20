@@ -64,7 +64,7 @@ describe("API Contract Test", () => {
             .withPredicate(
               new EqualPredicate()
                 .withMethod(HttpMethod.GET)
-                .withPath("/product/11")
+                .withPath("/product/10")
             )
             .withResponse(
               new Response().withStatusCode(200).withJSONBody(expectedProduct)
